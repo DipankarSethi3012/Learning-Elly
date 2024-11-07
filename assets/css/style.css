@@ -209,16 +209,50 @@ body {
 .h3 {
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
+  padding: 1rem;
 }
-
+.h3 a{
+  background-color: hsla(var(--color), 0.1);
+    color: hsl(var(--color));
+    /* font-size: var(--fs-5); */
+    /* font-weight: var(--fw-500); */
+    padding: 2px 18px;
+    max-width: 40rem;
+    margin-inline: auto;
+    border-radius: var(--radius-5);
+    padding: 1rem;
+}
+/* .h3 a:hover{
+  
+} */
+.section.category .h3 a{
+  background-color: hsla(var(--color), 0.1);
+    color: hsl(var(--color));
+    /* font-size: var(--fs-5); */
+    /* font-weight: var(--fw-500); */
+    padding: 2px 18px;
+    max-width: 40rem;
+    margin-inline: auto;
+    border-radius: var(--radius-5);
+    padding: 1rem;
+}
+.section.category .h3 a:hover{
+  color: black;
+  transition: .3s linear;
+}
 .section-title {
   --color: var(--radical-red);
   text-align: center;
 }
-
+/* .section.course h3 a{
+  font-size: 3rem;
+} */
 .section-title .span {
   display: inline-block;
   color: var(--color);
+}
+.section.course .course-card{
+  cursor: pointer;
 }
 
 .btn {
@@ -257,7 +291,9 @@ body {
 }
 
 .btn:is(:hover, :focus)::before { transform: translateX(0); }
-
+.img{
+  border-radius: 50%;
+}
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
   background-color: var(--light-gray);
@@ -527,9 +563,14 @@ body {
 
 .about-shape-2 {
   display: block;
-  bottom: -100px;
-  left: -60px;
+  bottom: -20px;
+  left: -40px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   animation: bounce 2.5s infinite;
+  box-shadow: 1px 3px  10px rgb(102, 100, 100);
 }
 
 @keyframes bounce {
@@ -887,7 +928,9 @@ body {
 }
 
 .footer-list .footer-link { padding-block: 5px; }
-
+.footer-img{
+  width: 20rem;
+}
 .newsletter-form { margin-block: 20px 35px; }
 
 .newsletter-form .input-field {
@@ -1112,6 +1155,11 @@ body {
     position: absolute;
     bottom: -40px;
     left: -10px;
+    /* border-radius: 100px; */
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
 
@@ -1122,7 +1170,7 @@ body {
 
   .about { padding-block-start: 50px; }
 
-  .about-banner {
+   .about-banner {
     padding: 60px;
     padding-inline-end: 0;
   }
@@ -1135,8 +1183,18 @@ body {
   .about-shape-1 {
     display: block;
     top: -40px;
-    right: -70px;
-  }
+    right: -50px;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 50px;
+  } 
+  /* .test-item{
+    border: 1px solid black;
+    width: 20rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 20px;
+  } */
 
 
 
